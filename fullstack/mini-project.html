@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+    <style>
+        * {
+             box-sizing:border-box;
+        }
+        /*body tag styles */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            margin-bottom: 30px;
+            color:black;
+        }
+        .hover{
+            color:rgb(230, 18, 121);
+            background-color: rgb(135, 192, 170);
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            border:none;
+            border-radius: 5px;
+        }
+        .hover:hover{
+            transform: scale(1.1);
+        }
+        .glass-card{
+            backdrop-filter: blur(10px);
+            background-color: rgb(67, 207, 229);
+            color:grey;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            width: 200px;
+        }
+        @media(max-width:500px){
+        .hover{
+            width: 50px;
+        }
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        margin: 1opx;
+    }
+    nav ul li {
+        margin:0 10px;
+    }
+    nav ul li a{
+        color:deeppink;
+        font-weight: 500;
+        padding: 15px;
+    }
+    nav ul li a:hover{
+        border-bottom: 3px solid rgb(223, 11, 11);
+    }
+    </style>
+</head>
+<body alink="green" vlink="red">
+    <header>
+    <h1>GEEKS FOR GEEKS</h1>
+    <h3>Hello,What Do You Want To Learn</h3>
+    <nav>
+        <ul>
+            <li><a href="#DSA">DSA</a></li>
+            <li><a href="WEB TECH">WEB TECH</a></li>
+            <li><a href="#PYTHON">PYTHON</a></li>
+            <li><a href="#MACHINE LEARNING">MACHINE LEARNING</a></li>
+            <li><a href="#JAVASCRIPT">JAVASCRIPT</a></li>
+        </ul>
+    </nav>
+    </header>
+    <button class="hover">Courses</button>
+    <div class="glass-card">
+        <h2>Data Structure and Algorithms</h2>
+        <P><a href="https://www.geeksforgeeks.org/courses/dsa-to-development-coding-guide/?itm_source=geeksforgeeks&itm_medium=newui_home&itm_campaign=courses">view more</a></P>
+    </div>
+    <div class="glass-card">
+        <h2>JAVA Java-backend-live</h2>
+        <P><a href="https://www.geeksforgeeks.org/courses/Java-backend-live/?itm_source=geeksforgeeks&itm_medium=newui_home&itm_campaign=courses">view more</a></P>
+    </div>
+    <div class="glass-card">
+        <h2>full-stack-node</h2>
+        <P><a href="https://www.geeksforgeeks.org/courses/full-stack-node/?itm_source=geeksforgeeks&itm_medium=newui_home&itm_campaign=courses">view more</a></P>
+    </div>
+    <a href ="https://www.geeksforgeeks.org">GEEKS FOR GEEKS</a>
+</body>
+</html>
